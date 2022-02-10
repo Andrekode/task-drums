@@ -3,8 +3,7 @@ document.addEventListener("keydown", playSound);
 function playSound(event) {
   const sounds = document.querySelectorAll("audio");
   for (let i = 0; i < sounds.length; i++) {
-    sounds[i].pause();
-    sounds[i].currentTime = 0;
+    sounds[i].load();
   }
   switch (event.key) {
     case "1":
